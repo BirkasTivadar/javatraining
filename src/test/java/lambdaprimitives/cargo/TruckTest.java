@@ -79,7 +79,7 @@ class TruckTest {
     @Test
     void testGetWeightStatistics() {
         assertEquals("A rakományban található 5 tétel, melyeknek összsúlya 495 kg, közülük a " +
-                "legnehezebb 300 kg, a legkönnyebb 15 kg. A súlyuk átlagosan 99.0 kg.", truck.getWeightStatistics());
+                "legnehezebb 300 kg, a legkönnyebb 15 kg. A súlyuk átlagosan 99,0 kg.", truck.getWeightStatistics());
     }
 
     @Test

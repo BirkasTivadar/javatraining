@@ -41,7 +41,7 @@ class CheeseManagerTest {
     void testSaveToFileAndFind() throws IOException {
         cheeseManager.saveToFile(path, cheeseList);
         Cheese testCheese = cheeseManager.findCheese(path, "Trappista");
-        assertEquals("Trappista: 1.58", testCheese.toString());
+        assertEquals("Trappista: 1,58", testCheese.toString());
 
         IllegalArgumentException ioe = assertThrows(IllegalArgumentException.class, () -> {
             cheeseManager.findCheese(path, "Edami");
